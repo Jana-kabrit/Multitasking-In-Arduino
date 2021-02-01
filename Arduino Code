@@ -1,0 +1,27 @@
+void setup() {
+   pinMode(ledPin2, OUTPUT); // sets the digital pin as output
+   pinMode(ledPin4, OUTPUT);
+}
+void loop() {
+   unsigned long currentMillis = millis(); // save the last time you blinked the LED
+  if (currentMillis - previousMillis2 >= interval2) { // if the LED is off turn it on and vice-versa
+     previousMillis2 = currentMillis; 
+     if (ledState2 == LOW) {
+ 	ledState2 = HIGH;
+ 	}
+    else {
+ 	ledState2 = LOW;
+ 	}
+ 	digitalWrite(ledPin2, ledState2);
+  }  
+  if (currentMillis - previousMillis4 >= interval4) {
+    previousMillis4 = currentMillis;
+    if (ledState4 == LOW) {
+ 	ledState4 = HIGH;
+ 	}
+    else {
+ 	ledState4 = LOW;
+ 	}
+ 	digitalWrite(ledPin4, ledState4);
+  }
+}
