@@ -1,0 +1,2 @@
+# MultitaskingInArduino
+The objective of this experiment is to study, program, and simulate a circuit that will have two LEDs blink at the same time by programming an Arduino. One of the LEDs should blink 2 times per second, and the other should blink 4 times per second. To get them to blink at the same time, we must code the Arduino using the millis function for multitasking the microcontroller. Second, we have to connect the Arduino and LEDs using a breadboard on the TinkerCad simulation.
